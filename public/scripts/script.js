@@ -9,5 +9,8 @@ function openNav(){
 }
 
 closeButton.addEventListener("click" , () => {
-    sectionToappear.style.right = '-400px';  
+    sectionToappear.style.right = '-400px';
+    setTimeout(()=> {
+        sectionToappear.style.display = 'none';
+    },1000);
 })
