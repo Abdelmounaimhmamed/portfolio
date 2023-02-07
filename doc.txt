@@ -1,0 +1,17 @@
+# express.json() : is a middleware that handle incoming request  data in json . 
+# express.urlencoded() : is a middleware that handle incoming request data in rel-encoded formats 
+# the url encoded format : is a way to encode data in a url , it used to send data in a http request 
+# body esp in a http request post . 
+# for example  : 
+# this data is simple form : username=John&email=john@example.com&password=secret
+# in url-encoded format : username%3DJohn%26email%3Djohn%40example.com%26password%3Dsecret . 
+# in the url encoded format ,all cchar are encoded as a percent symbol followed by the two hexadecimal digits . 
+# The { extended: true } option passed to express.urlencoded is a configuration option that determines
+# how the data in the URL-encoded request body should be parsed. 
+# When { extended: true } is used, the body-parser library used by Express will use the qs
+# library to parse the request body.
+# so extended true should be in there . 
+# app.use("view engine " , "ejs"); : to set the view engine for the express application . 
+# ejs : is a  view engine .  
+# const app = express(); : create a express application instance . 
+# You can now use the app object to define routes, middleware, and other functionality for your web application
