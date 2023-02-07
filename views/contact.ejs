@@ -2,7 +2,48 @@
 <%- include("./components/header.ejs"); %>
 
 
+<div class="contact">
 
+    <div class="message">
+        <h1><span>Contact us</span> for more information </h1>
+        <div class="social social-2">
+            <a target="_blank" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a target="_blank" href="mou_naimhm"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="tel:+212618757791"><i class="fa-brands fa-whatsapp"></i></a>
+            <a target="_blank" href="https://github.com/Abdelmounaimhmamed?tab=repositories"><i class="fa-brands fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/abdelmounaim-hmamed-891503203/"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <div class="location">
+            <h1><span>Adress :</span>  Ensa Khouribga </h1>
+        </div>
+    </div>
+
+
+    <form action="/contact" method="Post">
+        <div class="">
+            <input class="input" required type="text"placeholder="enter your first name" name="Firstname" id="Firstname" />
+        </div>
+        <div class="">
+            <input class="input" required type="text"placeholder="enter your last name" name="Lastname" id="Lastname" />
+        </div>
+        <div class="">
+            <input class="input" required type="email"placeholder="enter your email " name="email" id="email" />
+        </div>
+        <div class="">
+           <textarea name="own" class="own" placeholder="Your message"></textarea>
+        </div>
+        <div class="btns">
+            <input class="btn" required type="submit" value="submit" name="submit" id="submit" />
+            <button class="btn" type="reset">
+                Reset 
+            </button>
+        </div>
+    </form>
+    
+    
+
+
+</div>
 
 
 
