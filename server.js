@@ -24,6 +24,10 @@ app.use("/",ContactRoute);
 app.use("/",InspirationRoute);
 app.use("/",ProjectRoute);
 
+app.get("/" , (req,res) =>{
+    res.render("home.ejs");
+} )
+
 
 app.listen(Port , () => {
     console.log(`- Start listining on Port ${Port}`);
