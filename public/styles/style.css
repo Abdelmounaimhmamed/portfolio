@@ -5,7 +5,19 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #65ffdb;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 202, 202);
+  }
 body{
     background-color: rgb(0, 0, 0);
     max-width: 100%;
