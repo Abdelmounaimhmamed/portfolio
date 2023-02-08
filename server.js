@@ -1,7 +1,11 @@
 const express = require("express");
+const dotenv = require("dotenv");
 const Port = process.env.PORT || 5000 ;
 const path = require("path");
 const app = express();
+const mongoose = require("mongoose");
+const ContactSend = require("./routes/contact");
+dotenv.config();
 
 // getting routes : 
 const HomeRoute = require("./routes/home");
@@ -10,6 +14,13 @@ const ContactRoute = require("./routes/contact");
 const InspirationRoute = require("./routes/inspiration");
 const ProjectRoute = require("./routes/projects");
 
+// connection to mongodb 
+
+mongoose.connect(process.env.DB_URL).then( () => {
+    console.log("connected to db");
+}).catch(err => {
+    console.log(err.message)
+})
 
 // setup middleware : 
 app.use(express.json()) ;
