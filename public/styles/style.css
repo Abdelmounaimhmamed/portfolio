@@ -533,6 +533,7 @@ ul li {
     transform: rotate(-90deg);
     z-index: 10;
     position: relative;
+    font-size: 20px;
 }
 .title-proj h2 {
     color: white;
@@ -557,6 +558,7 @@ ul li {
     position: relative;
     overflow: hidden;
     margin-top:20px ;
+    transition: 0.5s ease all;
 }
 .image-1 {
     width: 100%;
@@ -585,13 +587,17 @@ ul li {
     z-index: 10;
     margin: 10px;
 }
+
+.box:hover {
+    transform: scale(1.1);
+}
 .boxes .box:hover>.black-screen {
     left : 0;
     margin: 15px;
 }
 .black-screen i {
     font-size: 30px;
-    margin-top: 70px;
+    margin-top: 60px;
     color: aqua;
 }
 .more a {
@@ -599,4 +605,7 @@ ul li {
     color: aqua !important;
     font-size: 25px;
     margin-left: 80px;
+}
+.black-screen h5 {
+    margin-right: 10px;
 }
