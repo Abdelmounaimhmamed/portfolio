@@ -551,10 +551,12 @@ ul li {
 .boxes .box {
     width: 350px;
     height: 200px;
-    margin: 0px 20px;
+    margin: 0px 30px;
     position: relative;
     border-radius: 20px;
     position: relative;
+    overflow: hidden;
+    margin-top:20px ;
 }
 .image-1 {
     width: 100%;
@@ -564,8 +566,8 @@ ul li {
 }
 .black-screen{
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     background-color: black;
     opacity: 0.5;
     z-index: 1;
@@ -573,9 +575,28 @@ ul li {
     flex-direction: column;
     justify-content: start;
     align-items: flex-end;
-    display: none;
+    transition: .5s ease all;
+    left: -100%;
+    border-radius: 10px;
+
+
 }
 .black-screen h1 {
     z-index: 10;
-   
+    margin: 10px;
+}
+.boxes .box:hover>.black-screen {
+    left : 0;
+    margin: 15px;
+}
+.black-screen i {
+    font-size: 30px;
+    margin-top: 70px;
+    color: aqua;
+}
+.more a {
+    text-decoration: none;
+    color: aqua !important;
+    font-size: 25px;
+    margin-left: 80px;
 }

@@ -5,7 +5,7 @@ var Projects = [
     {
         id : 1 ,
         projectName : "IRIC ARCHIVE",
-        projectsubTitleName : "webDevelopment ",
+        projectsubTitleName : "web Development ",
         link : "/home",
         imagesrc : "https://esmartech.ae/webroot/front/images/Node-Js.png"
     },
@@ -18,8 +18,8 @@ var Projects = [
     },
     {
         id : 1 ,
-        projectName : "PhP App",
-        projectsubTitleName : "Webapplication ",
+        projectName : "Php App",
+        projectsubTitleName : "Web Application",
         link : "/home",
         imagesrc : "https://www.interviewbit.com/blog/wp-content/uploads/2021/12/PHP-Projects-1160x653.png"
     }
