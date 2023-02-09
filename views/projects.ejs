@@ -2,6 +2,29 @@
 <%- include("./components/header.ejs"); %>
 
 
+<div class="Main-Project">
+    <div class="title-proj">
+        <h1>Projects</h1>
+        <h2>Latest Projects </h2>
+    </div>
+    <div class="boxes">
+       <% projects.forEach(pro => {%>
+        <div class="box">
+            <img class="image-1"  src="<%-pro.imagesrc %>"/>
+            <div class="black-screen">
+                <h1 class="proj-title"><%- pro.projectName%></h1>
+                <h5 class="proj-sub-title"><%- pro.projectsubTitleName%></h5>
+                <div class="icons">
+                    <i class="fa-solid fa-link"></i>
+                    <i class="fa-solid fa-code"></i>
+                </div>
+            </div>
+        </div>
+
+       <%})%>
+    </div>
+
+</div>
 
 
 

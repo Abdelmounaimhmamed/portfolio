@@ -451,3 +451,131 @@ ul li {
 .btn:hover{
     box-shadow: 0px 0px 20px 0px aqua ;
 }
+
+
+/* styling inspiration */
+
+.main-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: white;
+    margin: 100px 50px;
+}
+.quote {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom:80px ;
+}
+.quote i {
+    color: aqua;
+    font-size: 50px;
+    margin: 0px 20px;
+}
+.quote h1 {
+    transform: rotate(-90deg);
+    font-size: 20px;
+    color: white;
+}
+.quoteself {
+    margin-left: 110px;
+}
+.quoteself q {
+    color: white;
+    font-size: 21px;
+    margin-bottom: 10px; 
+    line-height: 60px;
+    min-height:100px;
+}
+.writer{
+    margin-top: 30px;
+}
+@media (max-width: 400px){
+    .quoteself  {
+        margin-left: 0px;
+    }
+    .quote i {
+        font-size :20px;
+    }
+}
+
+.name a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/*styling projects part : */
+
+.Main-Project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.title-proj{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+.title-proj h1 {
+    color: aqua;
+    font-size: 30px;
+    transform: rotate(-90deg);
+    z-index: 10;
+    position: relative;
+}
+.title-proj h2 {
+    color: white;
+    font-size: 40px;
+    font-weight: lighter;
+    z-index: 10;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:40px 50px ;
+}
+.boxes .box {
+    width: 350px;
+    height: 200px;
+    margin: 0px 20px;
+    position: relative;
+    border-radius: 20px;
+    position: relative;
+}
+.image-1 {
+    width: 100%;
+    height:100%;
+    border-radius: 20px;
+    position: absolute;
+}
+.black-screen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+    display: none;
+}
+.black-screen h1 {
+    z-index: 10;
+   
+}
