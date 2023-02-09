@@ -605,6 +605,7 @@ ul li {
     color: aqua !important;
     font-size: 25px;
     margin-left: 80px;
+    border-bottom: 1px solid aqua;
 }
 .black-screen h5 {
     margin-right: 10px;
